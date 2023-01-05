@@ -1,3 +1,2 @@
-## Personal Portfolio
+## Personal Portfolio light version
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
