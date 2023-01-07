@@ -1,56 +1,24 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+
+
+import { BlogCard, Grid, TitleContent, UtilityList, SkillCard } from '../Projects/ProjectsStyles';
+import { Section, SectionDivider, SectionTitle, SkillText } from '../../styles/GlobalComponents';
+import { projects } from '../../constants/constants';
 
 const Technologies = () =>  (
-  <Section id="tech">
-    <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
-    </SectionText>
-    <List>
-      <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-    </List>
-    <SectionDivider colorAlt />
+  <Section nopadding id="projects">
+    <SectionTitle style={{fontSize:"54px" , paddingTop:"36px"}} main>Main Skills</SectionTitle>
+    
+    <Grid>
+     {["Dapp architecture, Strategic thinking, Storytelling, Tokenization" , 
+     "Frontend, UX/UI, Smart contracts, AR/VR" ,
+     "Solidity, JavaScript, CSS, HTML, React, Node, Canvas, SVG, WebGL, Glsl, C#/C++" ,
+     "Figma, Blender, Photoshop, BIM"].map((project , index) => (<SkillCard key={index}>  <SkillText title> {project} </SkillText> </SkillCard>))}
+    </Grid>
+    <SectionDivider />
   </Section>
 );
 
 export default Technologies;
+

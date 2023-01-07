@@ -8,29 +8,48 @@ export const Img = styled.img`
 `
 
 export const GridContainer = styled.section`
+padding: 0px 0px 40px;
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
+grid-template-columns: repeat(auto-fill , minmax(240px , 1fr));
 place-items: center;
-column-gap: 2rem;
-row-gap: 3rem;
-@media ${(props) => props.theme.breakpoints.sm} {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 0;
-}
+column-gap: 0.5rem;
+row-gap: 0.75rem;
+justify-items: start;
 
 `
+export const Grid = styled.section`
+padding: 0px 0px 40px;
+display: grid;
+grid-template-columns: repeat(auto-fill , minmax(240px , 1fr));
+gap: 2rem;
+justify-items: start;
+
+`
+
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-style : solid;
+  border-color: rgba(255, 255, 255, 0.66);
+  border-width: 2px;
+  width: 100%;
   text-align: center;
-  width: 400px;
+  padding: 0.5rem 1.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
+
+export const SkillCard = styled.div`
+  border-style : none none none dashed;
+  border-radius: 5px;
+  width: 100%;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.66);
+  text-align: start;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
@@ -42,7 +61,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #ffffffaa;
   padding: .5rem 0;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;

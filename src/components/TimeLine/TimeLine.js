@@ -43,11 +43,8 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
-      </SectionText>
+    <Section nopadding id="about">
+      <SectionTitle style={{fontSize:"54px" , paddingTop:"36px"}} main>Activities</SectionTitle>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

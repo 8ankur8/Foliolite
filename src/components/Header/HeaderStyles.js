@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
@@ -116,7 +116,6 @@ color: white;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
     

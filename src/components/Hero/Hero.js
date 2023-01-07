@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, SectionHead } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -9,16 +9,18 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+          AliveAnkur 
         </SectionTitle>
+        <SectionHead>
+        Immersive Craftzman
+        </SectionHead>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I'm a metaverser and freelancer from India who heavily influenced by storytelling, immersive interactions, and killer user experiences. Always down to learn and grow in the metaverse. When I'm not working, you can find me jamming out to music, creating visiable art, or slaying it in some games.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>
     </Section>
   </>
 );
+
 
 export default Hero;

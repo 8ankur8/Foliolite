@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: #0F1624;
   padding: 0rem;
   list-style:none;
   display: flex;
@@ -40,7 +39,7 @@ export const CarouselMobileScrollNode = styled.div`
 `
 
 export const CarouselItem = styled.div`
-  background: #0F1624;
+
   border-radius: 3px;
   max-width: 196px;
 
@@ -51,7 +50,6 @@ export const CarouselItem = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #0E131F;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
@@ -66,24 +64,24 @@ export const CarouselItem = styled.div`
 
 export const CarouselItemTitle = styled.h4`
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 32px;
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: linear-gradient(121.57deg, #FFFFFF 10%, rgba(255, 255, 255, 0.66) 30.15%);
+  background: linear-gradient(121.57deg, #FFFFFFdd 10%, rgba(255, 255, 255, 0.7) 30.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
     margin-bottom: 4px;
   }
   
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 `
@@ -100,19 +98,19 @@ export const CarouselItemImg = styled.svg`
 `
 
 export const CarouselItemText = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
   padding-right: 16px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     padding-right: 32px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 16px;
     padding-right: 0;
   }
